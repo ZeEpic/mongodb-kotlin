@@ -44,7 +44,20 @@ Now you're ready to write some code.
 
 When you create an instance of the MongoDB class, put in the username and password we just made:
 
-`MongoDB(LoginInfo("myUsername", "mySecurePassword"), "cluster", "MyDatabaseName")`
+```kt
+MongoDB(LoginInfo("myUsername", "mySecurePassword"), "cluster", "MyDatabaseName")
+```
 "cluster" is that string we found in the very last step.
 "MyDatabaseName" is the one you chose along with the collection name.
 Check the Example.kt for more information.
+
+### Note
+At the time of writing, the correct pom dependancy for Maven is (the version may change in the future):
+
+```xml
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongodb-driver-sync</artifactId>
+    <version>4.4.0</version>
+</dependency>
+ ```
