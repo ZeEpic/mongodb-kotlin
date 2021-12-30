@@ -1,6 +1,11 @@
 // POJOs Class
-// "data" keyword is optional. Must use "var" and have default values for all attributes.
-data class Book(var title: String = "", var releaseDate: Long = 0, var pageCount: Int = 0, var sales: Long = 0)
+// "data" keyword is optional. Must use "var" and have default values for all attributes. The class cannot be private.
+data class Book(
+    var title: String = "",
+    var releaseDate: Long = 0
+    var pageCount: Int = 0,
+    var sales: Long = 0
+)
 
 
 fun main() {
